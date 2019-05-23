@@ -170,13 +170,13 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 1e0e53a22717149b791f97b1ffa1a716, type: 3}
-    m_FontSize: 42
+    m_Font: {fileID: 12800000, guid: e0cdfc0fbec2a4c38880e4162793c5b8, type: 3}
+    m_FontSize: 21
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 48
-    m_Alignment: 0
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -249,13 +249,13 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 1e0e53a22717149b791f97b1ffa1a716, type: 3}
-    m_FontSize: 42
+    m_Font: {fileID: 12800000, guid: e0cdfc0fbec2a4c38880e4162793c5b8, type: 3}
+    m_FontSize: 21
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 48
-    m_Alignment: 0
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -548,37 +548,69 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ReLA:
-  - {fileID: 8300000, guid: 1634225d3df57472da635020bb318d1f, type: 3}
-  - {fileID: 8300000, guid: 3368bb085f19241eb8e530d955fa04ec, type: 3}
-  - {fileID: 8300000, guid: cdf12e4cf1f254d279fef4cc1cd21fb3, type: 3}
-  - {fileID: 8300000, guid: de6015934dedd48d5b025848f1122c2f, type: 3}
-  - {fileID: 8300000, guid: 10afdc6884bc947779a9d6933ef7655f, type: 3}
-  - {fileID: 8300000, guid: 19deab4d5e29e4db5be92f17db3d9a54, type: 3}
-  - {fileID: 8300000, guid: 586a1ec335dba4b4980895cd70d0f36d, type: 3}
+  - {fileID: 8300000, guid: 0ed2d7550a66c436c8e3403f03b11af0, type: 3}
+  - {fileID: 8300000, guid: e0dcf33ca77cd458887fb837dd9cdd8a, type: 3}
+  - {fileID: 8300000, guid: 728ddcef87fa140d08b78556ecae001c, type: 3}
+  - {fileID: 8300000, guid: d83d7e40255934ba0a5df35e6f8d4eea, type: 3}
+  - {fileID: 8300000, guid: ff1428c994ecb425a9ec50f57d91a851, type: 3}
+  - {fileID: 8300000, guid: f6c5b3a8dca1c4df9a2fb8c3e0c06195, type: 3}
+  - {fileID: 8300000, guid: a1c34691d8b58430d8c7f94c3daf0f63, type: 3}
   ReRA:
-  - {fileID: 8300000, guid: 9f6b60705526e42df9e175a10879b262, type: 3}
-  - {fileID: 8300000, guid: 696cea35c18dc4c479fcc8e66cda4323, type: 3}
-  - {fileID: 8300000, guid: 72428880457d14ac1894c6738ceee606, type: 3}
-  - {fileID: 8300000, guid: a6c26d44137204aefbda0d2f80aa2e03, type: 3}
-  - {fileID: 8300000, guid: 838e5a9b3a7344bf39e38fb6907d5043, type: 3}
-  - {fileID: 8300000, guid: d84f957a2a41c48b8a97fcc9d038a069, type: 3}
-  - {fileID: 8300000, guid: 5595a45f7c01b41a8a21f9f878634b2a, type: 3}
+  - {fileID: 8300000, guid: 07d4f963411204718b4ca76362771c26, type: 3}
+  - {fileID: 8300000, guid: 204d97b3e31d34d939ff870d023a674e, type: 3}
+  - {fileID: 8300000, guid: c54c24ac1a1e744e3b12eb3464e977a1, type: 3}
+  - {fileID: 8300000, guid: 4d17d7fd55e544b5ba8e49255335b06e, type: 3}
+  - {fileID: 8300000, guid: 6055367b07cd64234a9cb1eaa36171f5, type: 3}
+  - {fileID: 8300000, guid: b2b04a1026bc6425692cfa45bb124930, type: 3}
+  - {fileID: 8300000, guid: 39d7cd839da704eb7988957dbeedd20f, type: 3}
   WwLA:
-  - {fileID: 8300000, guid: ad588fdf4776d4d7781264cbd4ec988d, type: 3}
-  - {fileID: 8300000, guid: 9655de3bfa02d41b5add99220206801a, type: 3}
-  - {fileID: 8300000, guid: d3cfde59b9a104731b2a1369f93cd13b, type: 3}
-  - {fileID: 8300000, guid: ba1380de767e0448bb83473eaf8d3d90, type: 3}
-  - {fileID: 8300000, guid: 9a8360d235cfb4dc5ad07cd1ee2048bc, type: 3}
-  - {fileID: 8300000, guid: 872cba683d9fe4bf6b92d8d64d100ff1, type: 3}
-  - {fileID: 8300000, guid: 8d516e2c7af04467b942552d57662fdf, type: 3}
+  - {fileID: 8300000, guid: 2aa06ea32245944d894d4d32f21de52b, type: 3}
+  - {fileID: 8300000, guid: e1542a21fb63b4aab948d7c154acb8fc, type: 3}
+  - {fileID: 8300000, guid: fa863b2daa943458bb5c6000e43dd1dc, type: 3}
+  - {fileID: 8300000, guid: d55e61fbb0a7e4e4c9219f9c496be324, type: 3}
+  - {fileID: 8300000, guid: dc6fc72d7acfd493e9fe5214089a8c66, type: 3}
+  - {fileID: 8300000, guid: 502a43990d0ee4d8eb2354b816a24251, type: 3}
+  - {fileID: 8300000, guid: ca43d21d608c446b1b6e4df064d794a1, type: 3}
   WwRA:
-  - {fileID: 8300000, guid: c325b27d6a80746dc92d824a94410f08, type: 3}
-  - {fileID: 8300000, guid: cffa6c60410f14b54ab69b58b3a75f55, type: 3}
-  - {fileID: 8300000, guid: eee9f858bba964b44a894cf2205c51cb, type: 3}
-  - {fileID: 8300000, guid: 34f5519adf39d4167a1476e7176ac330, type: 3}
-  - {fileID: 8300000, guid: 6454c534706d447909aec3ea0519629d, type: 3}
-  - {fileID: 8300000, guid: e604eec279ba94b0a9da67e236cbf503, type: 3}
-  - {fileID: 8300000, guid: a508fd1be75f9497f83e3e7b11cd2a7e, type: 3}
+  - {fileID: 8300000, guid: 0a984a94982af4408a91ef2860b890c9, type: 3}
+  - {fileID: 8300000, guid: 02cffa79786c04fcb8aa677938a24e12, type: 3}
+  - {fileID: 8300000, guid: 1323b404355314c4cbcca6145950890b, type: 3}
+  - {fileID: 8300000, guid: 8a7e9481ee3cc4e5f84e88dad4cc0852, type: 3}
+  - {fileID: 8300000, guid: e4b3ebde3203943dfb87a340403f5600, type: 3}
+  - {fileID: 8300000, guid: 8c38ca3e912974b948f9c64f1d1172bb, type: 3}
+  - {fileID: 8300000, guid: 2ffcbb852017f41a49f927d3c2ee0b2c, type: 3}
+  ZoLA:
+  - {fileID: 8300000, guid: f093ebf68bc7c4a5d8e856a978356068, type: 3}
+  - {fileID: 8300000, guid: 94ef9421f31d7418f8c792d8d6a3b03c, type: 3}
+  - {fileID: 8300000, guid: cc1c84f3e33a548679a98e927b23f6e2, type: 3}
+  - {fileID: 8300000, guid: 0bd9e58a971794609b9258fcab5a1dde, type: 3}
+  - {fileID: 8300000, guid: 45b57d66ee243498795a16af1c22c244, type: 3}
+  - {fileID: 8300000, guid: ff7e404caf1b94ad5a273e2e399f3632, type: 3}
+  - {fileID: 8300000, guid: 9d18028048e1f482bbccd75102d91e9b, type: 3}
+  ZoRA:
+  - {fileID: 8300000, guid: 7373b4ae874f44d46aeadca881725c06, type: 3}
+  - {fileID: 8300000, guid: c511a358478554870865a934140e7331, type: 3}
+  - {fileID: 8300000, guid: f21c50c2eeae94f3fb17350822b73e52, type: 3}
+  - {fileID: 8300000, guid: 3bbb2b2e04cc84c04938bca2272bdcb7, type: 3}
+  - {fileID: 8300000, guid: 182753ed9b5954f3e9d8c8dafff30868, type: 3}
+  - {fileID: 8300000, guid: b941aa927e7934290a82f3ec5a2819e5, type: 3}
+  - {fileID: 8300000, guid: 1ad12861d2f91414b94a7f349c7546ce, type: 3}
+  ChLA:
+  - {fileID: 8300000, guid: 265e77d3132314d5c8c04cbfa7399f20, type: 3}
+  - {fileID: 8300000, guid: 0748979cf25c34302aafd36279139706, type: 3}
+  - {fileID: 8300000, guid: 321f71421503f452db1e3a7a492d437c, type: 3}
+  - {fileID: 8300000, guid: a04102d16969049b8ac042c0c0585571, type: 3}
+  - {fileID: 8300000, guid: 5b0826b0bd56f4de5a1a38d511d60fce, type: 3}
+  - {fileID: 8300000, guid: e82d81d60bd12415c9a1f445b71c02fd, type: 3}
+  - {fileID: 8300000, guid: 1549b3b0818cb4d92b40596c1bffe540, type: 3}
+  ChRA:
+  - {fileID: 8300000, guid: 7bea9581e8a29408599342e0af28daf8, type: 3}
+  - {fileID: 8300000, guid: acd5208e013a3436182c034f82f6075c, type: 3}
+  - {fileID: 8300000, guid: 0636638de57884e0d9de2101b5f0aa31, type: 3}
+  - {fileID: 8300000, guid: b801405081f2c4d6e91138a881d1305b, type: 3}
+  - {fileID: 8300000, guid: c2e3bdc179e784e459e69ea96da919c2, type: 3}
+  - {fileID: 8300000, guid: 775ed23b366684065b6865fc1b862701, type: 3}
+  - {fileID: 8300000, guid: 0ca302b72b5e342949072335ec0b1f0c, type: 3}
   ReLT:
   - "A: \u201CYou gotta try the strawberry soda, dude! It\u2019s so good!\u201D"
   - "B: \u201CNo thanks, I\u2019m good.\u201D"
@@ -621,6 +653,39 @@ MonoBehaviour:
     one shoots. They''re in love with each other.
 
     Blackout.'
+  ZoLT:
+  - "A: \"So Basically\u2026 They\u2019re Monkey.\""
+  - 'B: "Did you know humans share more than 50 percent of their dna with bananas?"'
+  - 'A: "Evolution is real and we stan scientists."'
+  - 'B: "Charles Darwin is bae and I love him."'
+  - "Monkey: \"Y\u2019all like poop?\""
+  - 'B: "Yum."'
+  - The monkey strangles character B and eats their corpse.
+  ZoRT:
+  - "A: \"Damn, we\u2019re related to them?\""
+  - 'B: "Man I just wanna go apeshit."'
+  - 'A: "Evolution is fake and scientists are canceled."'
+  - 'B: "Charles Darwin is a bastard and I hate him."'
+  - 'Monkey: "DEATH WILL COME FOR US ALL!"'
+  - "B: \"I\u2019m done here.\""
+  - Characters A and B go to the gift shop and get cute stuffed animals.
+  ChLT:
+  - "A: \"Y\u2019all ready for some MOZART up in here?\""
+  - 'B: "I wanna go home."'
+  - "A: \"SQUIDWARD WAS A GOOD CLARINET PLAYER DON\u2019T LET THE MEDIA FOOL YOU!\""
+  - 'B: "I hope they play some bangers."'
+  - 'Announcer: "Doors are now open for the Marina and the Diamonds Concert."'
+  - "B: \"Let\u2019s go.\""
+  - They go and hear some bangers.
+  ChRT:
+  - "A: \"Do you think they\u2019ll let me join the orchestra playing my kazoo?\""
+  - 'B: "Is mayonnaise an instrument?"'
+  - 'A: "Debussy is a funny name. Lol."'
+  - "B: \"If Marina and the Diamonds isn\u2019t playing I don\u2019t wanna be here.\""
+  - 'Announcer: "Squidward suffered a tragic accident and Patrick will replace him."'
+  - 'B: "I hope they play Country Roads."'
+  - Character A starts playing the kazoo along with the performance and is kicked
+    out.
   clips:
   - {fileID: 0}
   - {fileID: 0}
@@ -698,8 +763,8 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 1e0e53a22717149b791f97b1ffa1a716, type: 3}
-    m_FontSize: 28
+    m_Font: {fileID: 12800000, guid: e0cdfc0fbec2a4c38880e4162793c5b8, type: 3}
+    m_FontSize: 14
     m_FontStyle: 2
     m_BestFit: 0
     m_MinSize: 0
@@ -925,13 +990,13 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 1e0e53a22717149b791f97b1ffa1a716, type: 3}
-    m_FontSize: 42
+    m_Font: {fileID: 12800000, guid: e0cdfc0fbec2a4c38880e4162793c5b8, type: 3}
+    m_FontSize: 21
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 48
-    m_Alignment: 0
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -1004,13 +1069,13 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 1e0e53a22717149b791f97b1ffa1a716, type: 3}
-    m_FontSize: 42
+    m_Font: {fileID: 12800000, guid: e0cdfc0fbec2a4c38880e4162793c5b8, type: 3}
+    m_FontSize: 21
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 48
-    m_Alignment: 0
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -1083,13 +1148,13 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 1e0e53a22717149b791f97b1ffa1a716, type: 3}
-    m_FontSize: 42
+    m_Font: {fileID: 12800000, guid: e0cdfc0fbec2a4c38880e4162793c5b8, type: 3}
+    m_FontSize: 21
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 48
-    m_Alignment: 0
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -1162,13 +1227,13 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 1e0e53a22717149b791f97b1ffa1a716, type: 3}
-    m_FontSize: 42
+    m_Font: {fileID: 12800000, guid: e0cdfc0fbec2a4c38880e4162793c5b8, type: 3}
+    m_FontSize: 21
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 48
-    m_Alignment: 0
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -1241,13 +1306,13 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 1e0e53a22717149b791f97b1ffa1a716, type: 3}
-    m_FontSize: 72
+    m_Font: {fileID: 12800000, guid: e0cdfc0fbec2a4c38880e4162793c5b8, type: 3}
+    m_FontSize: 36
     m_FontStyle: 2
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 72
-    m_Alignment: 1
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -1320,13 +1385,13 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 1e0e53a22717149b791f97b1ffa1a716, type: 3}
-    m_FontSize: 42
+    m_Font: {fileID: 12800000, guid: e0cdfc0fbec2a4c38880e4162793c5b8, type: 3}
+    m_FontSize: 21
     m_FontStyle: 2
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 48
-    m_Alignment: 0
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0

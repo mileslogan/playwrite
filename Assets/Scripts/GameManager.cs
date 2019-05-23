@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance = null;
 
     public int gameState = 0;
-    public int sceneLoc = 0; //0 = not set, 1 = restaurant, 2 = west;
+    public int sceneLoc = 0; //0 = not set, 1 = restaurant, 2 = west, 3 = zoo, 4 = concert hall
     public List<bool> leftAnswers;
 
     // Start is called before the first frame update

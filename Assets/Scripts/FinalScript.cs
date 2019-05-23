@@ -9,6 +9,10 @@ public class FinalScript : MonoBehaviour
     public List<AudioClip> ReRA;
     public List<AudioClip> WwLA;
     public List<AudioClip> WwRA;
+    public List<AudioClip> ZoLA;
+    public List<AudioClip> ZoRA;
+    public List<AudioClip> ChLA;
+    public List<AudioClip> ChRA;
 
     [TextArea(2, 10)]
     public List<string> ReLT;
@@ -18,6 +22,14 @@ public class FinalScript : MonoBehaviour
     public List<string> WwLT;
     [TextArea(2, 10)]
     public List<string> WwRT;
+    [TextArea(2, 10)]
+    public List<string> ZoLT;
+    [TextArea(2, 10)]
+    public List<string> ZoRT;
+    [TextArea(2, 10)]
+    public List<string> ChLT;
+    [TextArea(2, 10)]
+    public List<string> ChRT;
 
     public List<AudioClip> clips;
 
@@ -46,7 +58,7 @@ public class FinalScript : MonoBehaviour
                 }
             }
         }
-        else
+        else if (GameManager.Instance.sceneLoc == 2)
         {
             for (int i = 0; i < 7; i++) //changing text
             {
@@ -62,6 +74,39 @@ public class FinalScript : MonoBehaviour
                 }
             }
         }
+        else if (GameManager.Instance.sceneLoc == 3)
+        {
+            for (int i = 0; i < 7; i++) //changing text
+            {
+                if (GameManager.Instance.leftAnswers[i] == true)
+                {
+                    clips[i] = ZoLA[i];
+                    line[i].text = ZoLT[i];
+                }
+                else
+                {
+                    clips[i] = ZoRA[i];
+                    line[i].text = ZoRT[i];
+                }
+            }
+        }
+        else if (GameManager.Instance.sceneLoc == 4)
+        {
+            for (int i = 0; i < 7; i++) //changing text
+            {
+                if (GameManager.Instance.leftAnswers[i] == true)
+                {
+                    clips[i] = ChLA[i];
+                    line[i].text = ChLT[i];
+                }
+                else
+                {
+                    clips[i] = ChRA[i];
+                    line[i].text = ChRT[i];
+                }
+            }
+        }
+
         gameManager = GameObject.Find("GameManager");
     }
 
@@ -73,47 +118,47 @@ public class FinalScript : MonoBehaviour
             if (audiobaby.clip == null)
             {
                 audiobaby.clip = start;
-                audiobaby.Play();
+                audiobaby.PlayDelayed(1);
             }
             else if(audiobaby.clip == start)
             {
                 audiobaby.clip = clips[0];
-                audiobaby.Play();
+                audiobaby.PlayDelayed(1);
             }
             else if (audiobaby.clip == clips[0])
             {
                 audiobaby.clip = clips[1];
-                audiobaby.Play();
+                audiobaby.PlayDelayed(1);
             }
             else if (audiobaby.clip == clips[1])
             {
                 audiobaby.clip = clips[2];
-                audiobaby.Play();
+                audiobaby.PlayDelayed(1);
             }
             else if (audiobaby.clip == clips[2])
             {
                 audiobaby.clip = clips[3];
-                audiobaby.Play();
+                audiobaby.PlayDelayed(1);
             }
             else if (audiobaby.clip == clips[3])
             {
                 audiobaby.clip = clips[4];
-                audiobaby.Play();
+                audiobaby.PlayDelayed(1);
             }
             else if (audiobaby.clip == clips[4])
             {
                 audiobaby.clip = clips[5];
-                audiobaby.Play();
+                audiobaby.PlayDelayed(1);
             }
             else if (audiobaby.clip == clips[5])
             {
                 audiobaby.clip = clips[6];
-                audiobaby.Play();
+                audiobaby.PlayDelayed(1);
             }
             else if (audiobaby.clip == clips[6])
             {
                 audiobaby.clip = end;
-                audiobaby.Play();
+                audiobaby.PlayDelayed(1);
             }
         }
         if (Input.GetKeyDown(KeyCode.Space))

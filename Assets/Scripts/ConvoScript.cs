@@ -22,6 +22,8 @@ public class ConvoScript : MonoBehaviour
 
     public Sprite cowboyHat;
     public Sprite baseballHat;
+    public Sprite visorHat;
+    public Sprite noteHat;
 
     public SpriteRenderer hHatRenderer;
     public SpriteRenderer gHatRenderer;
@@ -64,8 +66,22 @@ public class ConvoScript : MonoBehaviour
             gHatRenderer.sprite = cowboyHat;
             hHatRenderer.sprite = cowboyHat;
         }
+        else if (GameManager.Instance.sceneLoc == 3)
+        {
+            hHatRenderer.enabled = true;
+            gHatRenderer.enabled = true;
+            gHatRenderer.sprite = visorHat;
+            hHatRenderer.sprite = visorHat;
+        }
+        else if (GameManager.Instance.sceneLoc == 4)
+        {
+            hHatRenderer.enabled = true;
+            gHatRenderer.enabled = true;
+            gHatRenderer.sprite = noteHat;
+            hHatRenderer.sprite = noteHat;
+        }
 
-        for (int i = 0; i < 16; i++) //changing text
+        for (int i = 0; i < 31; i++) //changing text
         {
             if (GameManager.Instance.gameState == i)
             {
@@ -95,6 +111,21 @@ public class ConvoScript : MonoBehaviour
             Right.color = black;
         }
 
+        if(GameManager.Instance.gameState == 0)
+        {
+            if (Input.GetKeyDown(KeyCode.RightArrow))
+            {
+                GameManager.Instance.gameState = 30;
+            }
+        }
+        else if (GameManager.Instance.gameState == 30)
+        {
+            if (Input.GetKeyDown(KeyCode.LeftArrow))
+            {
+                GameManager.Instance.gameState = 0;
+            }
+        }
+
         if (Input.GetKeyDown(KeyCode.Return)) //selecting options
         {
             if (GameManager.Instance.gameState == 0)
@@ -113,7 +144,24 @@ public class ConvoScript : MonoBehaviour
                 happyAnim.SetBool("isTalking", true); //set anims for next scene
                 grouchyAnim.SetBool("isTalking", false);
             }
-            else if (GameManager.Instance.gameState == 1 || GameManager.Instance.gameState == 8)
+            else if (GameManager.Instance.gameState == 30)
+            {
+                if (leftHighlight)
+                {
+                    GameManager.Instance.sceneLoc = 3; //zoo
+                    GameManager.Instance.gameState = 15;
+                }
+                else
+                {
+                    GameManager.Instance.sceneLoc = 4; //concert hall
+                    GameManager.Instance.gameState = 22;
+                }
+                audioboy.SendMessage("PlayResponse");
+                happyAnim.SetBool("isTalking", true); //set anims for next scene
+                grouchyAnim.SetBool("isTalking", false);
+            }
+            else if (GameManager.Instance.gameState == 1 || GameManager.Instance.gameState == 8
+                || GameManager.Instance.gameState == 15 || GameManager.Instance.gameState == 22)
             {
                 if (leftHighlight)
                 {
@@ -129,7 +177,8 @@ public class ConvoScript : MonoBehaviour
                 happyAnim.SetBool("isTalking", false);
                 grouchyAnim.SetBool("isTalking", true);
             }
-            else if (GameManager.Instance.gameState == 2 || GameManager.Instance.gameState == 9)
+            else if (GameManager.Instance.gameState == 2 || GameManager.Instance.gameState == 9
+                || GameManager.Instance.gameState == 16 || GameManager.Instance.gameState == 23)
             {
                 if (leftHighlight)
                 {
@@ -145,7 +194,8 @@ public class ConvoScript : MonoBehaviour
                 happyAnim.SetBool("isTalking", true);
                 grouchyAnim.SetBool("isTalking", false);
             }
-            else if (GameManager.Instance.gameState == 3 || GameManager.Instance.gameState == 10)
+            else if (GameManager.Instance.gameState == 3 || GameManager.Instance.gameState == 10
+                || GameManager.Instance.gameState == 17 || GameManager.Instance.gameState == 24)
             {
                 if (leftHighlight)
                 {
@@ -161,7 +211,8 @@ public class ConvoScript : MonoBehaviour
                 happyAnim.SetBool("isTalking", false);
                 grouchyAnim.SetBool("isTalking", true);
             }
-            else if (GameManager.Instance.gameState == 4 || GameManager.Instance.gameState == 11)
+            else if (GameManager.Instance.gameState == 4 || GameManager.Instance.gameState == 11
+                || GameManager.Instance.gameState == 18 || GameManager.Instance.gameState == 25)
             {
                 if (leftHighlight)
                 {
@@ -177,7 +228,8 @@ public class ConvoScript : MonoBehaviour
                 happyAnim.SetBool("isTalking", false);
                 grouchyAnim.SetBool("isTalking", false);
             }
-            else if (GameManager.Instance.gameState == 5 || GameManager.Instance.gameState == 12)
+            else if (GameManager.Instance.gameState == 5 || GameManager.Instance.gameState == 12
+                || GameManager.Instance.gameState == 19 || GameManager.Instance.gameState == 26)
             {
                 if (leftHighlight)
                 {
@@ -193,7 +245,8 @@ public class ConvoScript : MonoBehaviour
                 happyAnim.SetBool("isTalking", false);
                 grouchyAnim.SetBool("isTalking", true);
             }
-            else if (GameManager.Instance.gameState == 6 || GameManager.Instance.gameState == 13)
+            else if (GameManager.Instance.gameState == 6 || GameManager.Instance.gameState == 13
+                || GameManager.Instance.gameState == 20 || GameManager.Instance.gameState == 27)
             {
                 if (leftHighlight)
                 {
@@ -209,7 +262,8 @@ public class ConvoScript : MonoBehaviour
                 happyAnim.SetBool("isTalking", false);
                 grouchyAnim.SetBool("isTalking", false);
             }
-            else if (GameManager.Instance.gameState == 7 || GameManager.Instance.gameState == 14)
+            else if (GameManager.Instance.gameState == 7 || GameManager.Instance.gameState == 14
+                || GameManager.Instance.gameState == 21 || GameManager.Instance.gameState == 28)
             {
                 if (leftHighlight)
                 {
@@ -222,9 +276,9 @@ public class ConvoScript : MonoBehaviour
                 audioboy.SendMessage("PlayResponse");
                 happyAnim.SetBool("isTalking", false);
                 grouchyAnim.SetBool("isTalking", false);
-                GameManager.Instance.gameState = 15;
+                GameManager.Instance.gameState = 29;
             }
-            else if (GameManager.Instance.gameState == 15)
+            else if (GameManager.Instance.gameState == 29)
             {
                 gameManager.SendMessage("ChangeScene");
             }
